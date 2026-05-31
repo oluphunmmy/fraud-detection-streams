@@ -1,0 +1,31 @@
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.FraudModule = void 0;
+const common_1 = require("@nestjs/common");
+const mongoose_1 = require("@nestjs/mongoose");
+const fraud_controller_1 = require("./fraud.controller");
+const fraud_processor_service_1 = require("./fraud-processor.service");
+const fraud_service_1 = require("./fraud.service");
+const flagged_transaction_schema_1 = require("./schemas/flagged-transaction.schema");
+let FraudModule = class FraudModule {
+};
+exports.FraudModule = FraudModule;
+exports.FraudModule = FraudModule = __decorate([
+    (0, common_1.Module)({
+        imports: [
+            mongoose_1.MongooseModule.forFeature([
+                { name: flagged_transaction_schema_1.FlaggedTransaction.name, schema: flagged_transaction_schema_1.FlaggedTransactionSchema },
+            ]),
+        ],
+        controllers: [fraud_controller_1.FraudController],
+        providers: [fraud_service_1.FraudService, fraud_processor_service_1.FraudProcessorService],
+        exports: [fraud_service_1.FraudService, fraud_processor_service_1.FraudProcessorService],
+    })
+], FraudModule);
+//# sourceMappingURL=fraud.module.js.map

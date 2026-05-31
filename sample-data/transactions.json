@@ -1,0 +1,8 @@
+[
+  {"transactionId":"txn_a1","userId":"user_a","amount":100,"timestamp":"2026-05-28T10:00:00.000Z","merchant":"Store A","location":"Lagos","geo":{"lat":6.5244,"lng":3.3792}},
+  {"transactionId":"txn_a2","userId":"user_a","amount":100,"timestamp":"2026-05-28T10:00:05.000Z","merchant":"Store A","location":"Lagos","geo":{"lat":6.5244,"lng":3.3792}},
+  {"transactionId":"txn_a3","userId":"user_a","amount":100,"timestamp":"2026-05-28T10:00:10.000Z","merchant":"Store A","location":"Lagos","geo":{"lat":6.5244,"lng":3.3792}},
+  {"transactionId":"txn_a4","userId":"user_a","amount":100,"timestamp":"2026-05-28T10:00:15.000Z","merchant":"Store A","location":"Lagos","geo":{"lat":6.5244,"lng":3.3792}},
+  {"transactionId":"txn_a5","userId":"user_a","amount":100,"timestamp":"2026-05-28T10:00:20.000Z","merchant":"Store A","location":"Lagos","geo":{"lat":6.5244,"lng":3.3792}},
+  {"transactionId":"txn_a6","userId":"user_a","amount":100,"timestamp":"2026-05-28T10:00:25.000Z","merchant":"Store A","location":"Lagos","geo":{"lat":6.5244,"lng":3.3792}}
+]
